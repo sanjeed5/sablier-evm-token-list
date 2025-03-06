@@ -20,7 +20,7 @@
     "prettier-plugin-sort-json": "2.0.0",
     "@uniswap/token-list-bridge-utils": "2.6.0"
   },
-  "homepage": "https://github.com/sablier-labs/default-token-list#readme",
+  "homepage": "https://github.com/sablier-labs/evm-token-list#readme",
   "keywords": [
     "ethereum",
     "evm",
