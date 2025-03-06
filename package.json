@@ -1,13 +1,13 @@
 {
-  "name": "@sablier/community-token-list",
-  "description": "The Sablier community token list",
+  "name": "@sablier/evm-token-list",
+  "description": "The Sablier EVM token list",
   "version": "1.0.0",
   "author": {
     "name": "Sablier Labs Ltd",
     "url": "https://sablier.com"
   },
   "bugs": {
-    "url": "https://github.com/sablier-labs/community-token-list/issues"
+    "url": "https://github.com/sablier-labs/evm-token-list/issues"
   },
   "devDependencies": {
     "@ethersproject/address": "^5.0.2",
@@ -23,17 +23,17 @@
   "homepage": "https://github.com/sablier-labs/default-token-list#readme",
   "keywords": [
     "ethereum",
+    "evm",
     "erc20",
     "evm",
     "sablier",
     "token",
-    "tokenlist",
-    "token-community-list"
+    "tokenlist"
   ],
   "license": "GPL-3.0-or-later",
-  "repository": "github.com/sablier-labs/community-token-list",
+  "repository": "github.com/sablier-labs/evm-token-list",
   "scripts": {
-    "build": "rm -rf build && mkdir -p build && node src/write.js > build/sablier-community.tokenlist.json",
+    "build": "rm -rf build && mkdir -p build && node src/write.js > build/sablier-evm.tokenlist.json",
     "prettier:check": "prettier --check \"**/*.{js,json,md,yml}\" .",
     "prettier:fix": "prettier --write \"**/*.{js,json,md,yml}\" .",
     "prepublishOnly": "bun run test && bun run build",
