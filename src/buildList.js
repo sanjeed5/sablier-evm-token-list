@@ -33,7 +33,7 @@ const bridgeUtils = require("@uniswap/token-list-bridge-utils");
 module.exports = function buildList() {
   const parsed = version.split(".");
   const l1List = {
-    name: "Sablier EVM Default",
+    name: "Sablier EVM Token List",
     timestamp: new Date().toISOString(),
     version: {
       major: +parsed[0],

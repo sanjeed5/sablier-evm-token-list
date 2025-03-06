@@ -30,7 +30,7 @@ jobs:
         uses: "anantaramdas/ipfs-pinata-deploy-action@a551f37c17ec3961df7c3ad52e1cd266dfd3d7e7"
         with:
           path: "./build/sablier-evm.tokenlist.json"
-          pin-name: "Sablier Default Token List"
+          pin-name: "Sablier EVM Token List"
           pinata-api-key: ${{ secrets.PINATA_API_KEY }}
           pinata-secret-api-key: ${{ secrets.PINATA_API_SECRET_KEY }}
 
