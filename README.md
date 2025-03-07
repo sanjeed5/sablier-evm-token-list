@@ -12,7 +12,7 @@ To add your ERC-20 token to the list, submit a request by
 
 The Sablier Interface pulls the token list from the following URLs:
 
-- [sablier-evm-token-list.vercel.app](https://sablier-evm-token-list.vercel.app)
+- [sablier-evm-token-list.vercel.app](https://sablier-evm-token-list.vercel.app/sablier-evm.tokenlist.json) (Vercel)
 - [tokens.sablier.io](https://tokens.sablier.io) (an IPFS gateway, used as a fallback)
 
 ## Credits
