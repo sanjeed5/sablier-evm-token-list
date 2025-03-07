@@ -10,6 +10,7 @@ jobs:
   test:
     uses: "./.github/workflows/ci-tests.yml"
   deploy:
+    environment: "Production"
     needs: "test"
     runs-on: "ubuntu-latest"
     steps:
