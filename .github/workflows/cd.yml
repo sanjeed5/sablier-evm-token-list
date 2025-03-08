@@ -7,6 +7,12 @@ concurrency:
   cancel-in-progress: false
   group: "pages"
 
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: "read"
+  pages: "write"
+  id-token: "write"
+
 on:
   # Can be manually triggered by any member with Write permission
   workflow_dispatch:
