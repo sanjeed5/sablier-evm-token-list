@@ -1,3 +1,4 @@
+# Continuous Integration for the Token Decimals test
 name: "CI Token Decimals"
 
 env:
@@ -37,6 +38,9 @@ on:
   schedule:
     - cron: "0 3 * * 0" # at 3:00am UTC every Sunday
   workflow_call:
+    secrets:
+      API_KEY_INFURA:
+        required: true
 
 jobs:
   check-decimals:

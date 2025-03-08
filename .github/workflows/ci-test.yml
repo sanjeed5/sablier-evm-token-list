@@ -1,4 +1,5 @@
-name: "CI Test"
+# Continuous Integration for the JS Tests
+name: "CI JS Tests"
 
 # Trigger workflow execution:
 # - On any pull request activity (open, synchronize, reopen)
