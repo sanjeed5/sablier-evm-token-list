@@ -33,9 +33,9 @@
   "license": "GPL-3.0-or-later",
   "repository": "github.com/sablier-labs/evm-token-list",
   "scripts": {
-    "build": "rm -rf build/sablier-evm.tokenlist.json && node src/write.js > build/sablier-evm.tokenlist.json",
-    "prettier:check": "prettier --check \"**/*.{js,json,md,yml}\" .",
-    "prettier:fix": "prettier --write \"**/*.{js,json,md,yml}\" .",
+    "build": "rm -rf build/tokenlist.json && node src/write.js > build/tokenlist.json",
+    "prettier:check": "prettier --check \"**/*.{html,js,json,md,yml}\" .",
+    "prettier:fix": "prettier --write \"**/*.{html,js,json,md,yml}\" .",
     "prepublishOnly": "bun run test && bun run build",
     "test": "mocha"
   }

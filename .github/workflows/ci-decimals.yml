@@ -1,4 +1,4 @@
-name: "Continuous Integration: Decimals"
+name: "CI Token Decimals"
 
 env:
   ABSTRACT_MAINNET_RPC_URL: "https://api.mainnet.abs.xyz"
@@ -32,8 +32,7 @@ on:
   workflow_dispatch:
   pull_request:
   push:
-    branches:
-      - "main"
+    branches: ["main"]
   schedule:
     - cron: "0 3 * * 0" # at 3:00am UTC every Sunday
 
@@ -50,5 +49,5 @@ jobs:
 
       - name: "Add summary"
         run: |
-          echo "## CI Decimals result" >> $GITHUB_STEP_SUMMARY
+          echo "## CI Token Decimals result" >> $GITHUB_STEP_SUMMARY
           echo "✅ Passed" >> $GITHUB_STEP_SUMMARY
