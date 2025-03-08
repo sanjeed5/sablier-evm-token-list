@@ -15,16 +15,20 @@ on:
     branches: ["main"]
 
 jobs:
-  # Run the tests first
-  test:
+  # Run the JS tests
+  test-js:
     uses: "./.github/workflows/ci-test.yml"
+
+  # Run the token decimals tests
+  test-decimals:
+    uses: "./.github/workflows/ci-decimals.yml"
 
   # Deploy to GitHub Pages, IPFS, and Cloudflare Web3 Gateway
   deploy:
     environment:
       name: "Production"
       url: ${{ steps.pages-deployment.outputs.page_url }}
-    needs: "test"
+    needs: ["test-js", "test-decimals"]
     runs-on: "ubuntu-latest"
 
     steps:
@@ -57,7 +61,7 @@ jobs:
       # ----- IPFS Deployment -----
       - name: "Deploy and pin bundle to IPFS"
         id: "ipfs-deployment"
-        uses: "anantaramdas/ipfs-pinata-deploy-action@a551f37"
+        uses: "anantaramdas/ipfs-pinata-deploy-action@a551f37c17ec3961df7c3ad52e1cd266dfd3d7e7"
         with:
           path: "./build/tokenlist.json"
           pin-name: "Sablier EVM Token List"
