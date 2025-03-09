@@ -334,5 +334,13 @@
     "logoURI": "https://files.sablier.com/tokens/PMX.png",
     "name": "Primex Finance",
     "symbol": "PMX"
+  },
+  {
+    "address": "0xfD0BeCBd334B1DA1d5E30e8E7496d0f4dDb72811",
+    "chainId": 56,
+    "decimals": 18,
+    "logoURI": "https://files.sablier.com/tokens/KAYEN.png",
+    "name": "Kayen Token",
+    "symbol": "KAYEN"
   }
 ]
