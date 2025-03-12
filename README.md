@@ -13,7 +13,7 @@ To add your ERC-20 token to the list, submit a request by
 The Sablier Interface pulls the token list from the following URLs:
 
 - [evm-token-list.sablier.com](https://evm-token-list.sablier.com/tokenlist.json) (GitHub Pages)
-- [tokens.sablier.io](https://tokens.sablier.io) (an IPFS gateway, used as a fallback)
+- [evm-token-list.sablier.io](https://evm-token-list.sablier.io) (an IPFS gateway, used as a fallback)
 
 ## Credits
 
