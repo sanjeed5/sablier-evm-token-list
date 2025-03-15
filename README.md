@@ -6,7 +6,7 @@ To add your ERC-20 token to the list, submit a request by
 > [!IMPORTANT]
 >
 > Filing an issue does not guarantee addition to the token list. We do not review token addition requests in any
-> particular order, and we do not guarantee that your request will be accepted.
+> particular order, and we do not guarantee that your request will be accepted.w
 
 ## Hosting
 

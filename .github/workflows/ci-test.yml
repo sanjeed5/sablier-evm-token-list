@@ -1,11 +1,10 @@
 # Continuous Integration for the JS Tests
 name: "CI JS Tests"
 
-# Trigger workflow execution:
-# - On any pull request activity (open, synchronize, reopen)
-# - When called from another workflow (workflow_call)
 on:
+  # Any pull request activity (open, synchronize, reopen)
   pull_request:
+  # When called from another workflow
   workflow_call:
 
 jobs:

@@ -29,14 +29,13 @@ env:
   XDC_MAINNET_RPC_URL: "https://rpc.xinfin.network"
   ZKSYNC_MAINNET_RPC_URL: "https://zksync-mainnet.infura.io/v3/${{ secrets.API_KEY_INFURA }}"
 
-# Trigger workflow execution:
-# - On any pull request activity (open, synchronize, reopen)
-# - Weekly on Sundays at 3:00 AM UTC
-# - When called from another workflow (workflow_call)
 on:
+  # Any pull request activity (open, synchronize, reopen)
   pull_request:
+  # Weekly on Sundays at 3:00 AM UTC
   schedule:
-    - cron: "0 3 * * 0" # at 3:00am UTC every Sunday
+    - cron: "0 3 * * 0"
+  # When called from another workflow
   workflow_call:
     secrets:
       API_KEY_INFURA:
