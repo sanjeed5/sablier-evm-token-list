@@ -34,7 +34,7 @@ jobs:
   # Deploy to GitHub Pages, IPFS, and Cloudflare Web3 Gateway
   deploy:
     environment:
-      name: "Production"
+      name: "production"
       url: ${{ steps.pages-deployment.outputs.page_url }}
     needs: ["test-js", "test-decimals"]
     runs-on: "ubuntu-latest"
