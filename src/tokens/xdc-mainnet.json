@@ -6,5 +6,13 @@
     "logoURI": "https://files.sablier.com/tokens/WXDC.png",
     "name": "Wrapped XDC",
     "symbol": "WXDC"
+  },
+  {
+    "address": "0x05940B2dF33D6371201e7Ae099CeD4C363855dFE",
+    "chainId": 50,
+    "decimals": 18,
+    "logoURI": "https://files.sablier.com/tokens/LBT.png",
+    "name": "Law Blocks (AI)",
+    "symbol": "LBT"
   }
 ]
