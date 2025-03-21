@@ -2466,6 +2466,14 @@
     "symbol": "BIO"
   },
   {
+    "address": "0xaADE1D6701173Bd924c9de2d56a00eF4e3d9de4d",
+    "chainId": 1,
+    "decimals": 9,
+    "logoURI": "https://files.sablier.com/tokens/BWS.png",
+    "name": "Blockchain Web Services",
+    "symbol": "BWS"
+  },
+  {
     "address": "0x2a414884a549ef5716bc1a4e648d3dc03f08b2cf",
     "chainId": 1,
     "decimals": 18,
